@@ -5,6 +5,18 @@
 
 <h1>Editing Book</h1>
 
+<% if @book.errors.any? %>
+<div class="errors">
+  <h2><%= @book.errors.count %> errors prohibited this book from being saved:</h2>
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+      <% end %>
+  </ul>
+  <% end %>
+  </div>
+
+
 <%= form_with model: @book do |f| %>
 <div class="field">
   <label class="book_title">Title</label>
@@ -19,6 +31,6 @@
   </div>
 <% end %>
 
-<a><%= link_to "Show", book_path %></a>
+<p><%= link_to "Show", book_path %>
 |
-<a><%= link_to "Back","/books" %> </a>
+<%= link_to "Back","/books" %></p>

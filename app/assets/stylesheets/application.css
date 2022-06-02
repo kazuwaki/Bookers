@@ -61,3 +61,25 @@ p, ol, ul, td {
 .text-success {
     color: green;
 }
+
+div.errors {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+div.errors h2{
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    color: #fff;
+}
+
+div.errors li {
+    font-size: 12px;
+}
